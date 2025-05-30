@@ -135,7 +135,7 @@ a:visited {
   line-height: 30px;
 }
 
-.recpies__videos {
+.recipes__videos {
   display: flex;
   justify-content: center;
   gap: 100px;
@@ -145,7 +145,7 @@ a:visited {
   padding: 0;
 }
 
-.recpies__video-caption {
+.recipes__video-caption {
   display: flex;
   justify-content: space-between;
   font-family: "Inter";
