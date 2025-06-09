@@ -34,16 +34,16 @@
           />
           <ul class="nav__links">
             <li>
-              <a class="nav__link" href="#">Recipes</a>
+              <a class="nav__link" href="#Recipes1">Recipes</a>
             </li>
             <li>
-              <a class="nav__link" href="#">Book a table</a>
+              <a class="nav__link" href="#reservation1">Book a table</a>
             </li>
             <li>
-              <a class="nav__link" href="#">Menu</a>
+              <a class="nav__link" href="#Menu1">Menu</a>
             </li>
             <li>
-              <a class="nav__link" href="#">Contacts</a>
+              <a class="nav__link" href="#About1">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -72,7 +72,7 @@
         </div>
       </header>
       <main class="content">
-        <section class="recipes">
+        <section id="Recipes1" class="recipes">
           <h2 class="recipes__title">Recipes</h2>
           <p class="recipes__subtitle">
             Check out some recipes we've collected for your home-brewing
@@ -111,9 +111,68 @@
             </li>
           </ul>
         </section>
-        <section class="reservation"></section>
-        <section class="menu"></section>
-        <section class="about"></section>
+        <section class="reservation">
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <lable for="name-input" class="form__lable">
+                Name *
+                <input
+                  id="name-input"
+                  type="text"
+                  class="form__input"
+                  placeholder="Name Surname"
+                  required
+                />
+              </lable>
+              <lable for="number-input" class="form__lable">
+                Number of guests *
+                <input
+                  id="number-input"
+                  type="number"
+                  class="form__input"
+                  min="1"
+                  max="8"
+                  placeholder="1-8"
+                  required
+                />
+              </lable>
+              <lable for="date & time-input" class="form__lable">
+                Date & time *
+                <input
+                  id="date & time-input"
+                  type="datetime-local"
+                  class="form__input"
+                  required
+                />
+              </lable>
+              <lable for="email-input" class="form__lable">
+                Your email *
+                <input
+                  id="email-input"
+                  type="email"
+                  class="form__input"
+                  placeholder="email@email.com"
+                  required
+                />
+              </lable>
+            </fieldset>
+            <button class="form__button">Book a table</button>
+            <lable
+              for="ToS-checkbox-input"
+              class="form__lable form__lable_type_checkbox"
+            >
+              <input
+                id="ToS-checkbox-input"
+                type="checkbox"
+                class="form__checkbox"
+              />
+              I agree with the terms of use
+            </lable>
+          </form>
+        </section>
+        <section id="Menu1" class="menu"></section>
+        <section id="About1" class="about"></section>
       </main>
       <footer class="footer"></footer>
     </div>
