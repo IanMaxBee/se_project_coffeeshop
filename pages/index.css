@@ -193,7 +193,7 @@ a:visited {
   border: none;
 }
 
-.form__lable {
+.form__label {
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
@@ -241,7 +241,7 @@ a:visited {
   height: 20px;
 }
 
-.form__lable_type_checkbox {
+.form__label_type_checkbox {
   display: flex;
   justify-content: center;
   gap: 12px;
